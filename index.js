@@ -6,4 +6,6 @@ app.get('/', (req, res) =>{
 	res.send("Welcome to my first AWS program!");
 });
 
-app.listen(port);
+app.listen(port, () =>{
+	console.log(`Server running on http://localhost:${port}`)
+});
